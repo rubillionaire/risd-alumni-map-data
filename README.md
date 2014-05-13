@@ -1,0 +1,1 @@
+[RISD Community Mapping Data](http://community-risd.github.io/alumni-map)
