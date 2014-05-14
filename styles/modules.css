@@ -2,7 +2,7 @@
     margin-bottom: 20px;
 }
 .leaflet-container .metadata-label {
-    margin: 0;
+    margin: 0 0 0.15em 0;
     font-weight: bold;
 }
 .leaflet-container .metadata-value {
