@@ -1,0 +1,41 @@
+{
+  "name": "risd-alumni-map-basic",
+  "version": "0.0.0",
+  "description": "Map showcasing RISD Alumni",
+  "main": "src/index.js",
+  "scripts": {
+    "build-css": "cat styles/mapbox.css styles/fonts.css styles/layout.css styles/modules.css > dist/site.css",
+    "build-js": "browserify src/index.js -o dist/site.js",
+    "build-js-lib": "cat lib/*.js > dist/lib.js",
+    "build-js-bundle": "cat dist/lib.js dist/site.js > dist/bundle.js",
+    "watch-css": "catw styles/mapbox.css styles/fonts.css styles/layout.css styles/modules.css -o dist/site.css",
+    "watch-js": "watchify src/index.js -o dist/site.js -dv",
+    "watch-js-lib": "catw lib/*.js -o dist/lib.js -v",
+    "watch-js-bundle": "catw dist/lib.js dist/site.js -o dist/bundle.js -dv",
+    "watch": "npm run watch-js & npm run watch-css & npm run watch-js-lib & npm run watch-js-bundle",
+    "build": "npm run build-js & npm run build-js-lib & npm run build-css & npm run build-js-bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Ruben Rodriguez",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "d3": "~3.4.4",
+    "mapbox.js": "~1.6.2"
+  },
+  "devDependencies": {
+    "watchify": "~0.6.3",
+    "catw": "~0.2.0",
+    "foreman": "~0.2.1",
+    "queue-async": "~1.0.7",
+    "request": "~2.34.0",
+    "browserify": "~3.38.0",
+    "serve": "~1.4.0"
+  }
+}
