@@ -1,0 +1,10 @@
+.leaflet-container .metadata {
+    margin-bottom: 20px;
+}
+.leaflet-container .metadata-label {
+    margin: 0;
+    font-weight: bold;
+}
+.leaflet-container .metadata-value {
+    margin: 0;
+}
